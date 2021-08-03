@@ -28,6 +28,6 @@ public class HandleCookie {
         // Delete the cookie
         driver.manage().deleteCookieNamed("newCookie");
 
-
+        driver.close();
     }
 }

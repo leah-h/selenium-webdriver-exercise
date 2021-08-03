@@ -40,5 +40,6 @@ public class SearchPage {
         Set<Cookie> getAllCookies = driver.manage().getCookies();
         logger.info("getAllCookies: " + getAllCookies);
 
+        driver.close();
     }
 }
