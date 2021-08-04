@@ -34,6 +34,7 @@ public class DoubleClick {
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 
         alert.accept();
+        logger.info("double-click example");
 
         driver.close();
 
