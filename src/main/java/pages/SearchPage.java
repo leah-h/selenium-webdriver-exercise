@@ -7,7 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class SearchPage {
@@ -36,9 +35,6 @@ public class SearchPage {
         By locator = By.xpath("//a[contains(@href, 'https://www.educative.io')]");
         List<WebElement> list = driver.findElements(locator);
         logger.info("list: " + list);
-
-        Set<Cookie> getAllCookies = driver.manage().getCookies();
-        logger.info("getAllCookies: " + getAllCookies);
 
         driver.close();
     }
